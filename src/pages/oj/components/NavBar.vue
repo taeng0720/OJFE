@@ -126,11 +126,11 @@
     padding-bottom: 15px;
     width: 100%;
     z-index: 1000;
-    background-color: #e1e1e1;
+    background-color: #ECEFF1;
     box-shadow: 0 1px 5px 0 #e1e1e1;
     margin-bottom: 200px;
     .oj-menu {
-      background: #e1e1e1;
+      background: #ECEFF1;
     }
     .ivu-menu-light.ivu-menu-horizontal .ivu-menu-item-active, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-item:hover, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu-active, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu:hover {
       color: #934A5F;
@@ -152,7 +152,7 @@
       float: left;
       height: 200px;
       line-height: 60px;
-      color: #9e3653;
+      color: #333333;
     }
 
     .drop-menu {

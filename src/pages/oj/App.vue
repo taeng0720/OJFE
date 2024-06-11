@@ -99,15 +99,15 @@
     animation: fadeInUp .8s;
   }
   body{
-    background-color: #E5E5E5;
+    background-color: #F0F0F0;
     border-bottom: 1px solid #57648C;
     border-top: 1px solid #57648C;
-    width: 800px;
+    width: 1000px;
     margin: auto;
     margin-top: 100px;
   }
   html{
-    background-color: #E5E5E5;
+    background-color: #F0F0F0;
   }
 
 
