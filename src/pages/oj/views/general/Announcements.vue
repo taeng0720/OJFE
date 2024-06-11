@@ -117,6 +117,10 @@
   background-color: #934A5F;
   border-color: #934A5F;
 }
+.ivu-page-item-active {
+  background-color: #934A5F;
+  border-color: #934A5F;
+}
   .announcements-container {
     margin-top: -10px;
     margin-bottom: 10px;
