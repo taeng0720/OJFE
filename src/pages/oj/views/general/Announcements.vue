@@ -121,7 +121,7 @@
       padding-bottom: 15px;
       margin-left: 20px;
       font-size: 16px;
-      border-bottom: 1px solid rgba(187, 187, 187, 0.5);
+      border-bottom: 1px solid rgb(187, 187, 187);
       &:last-child {
         border-bottom: none;
       }

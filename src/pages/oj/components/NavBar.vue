@@ -126,25 +126,40 @@
     padding-bottom: 15px;
     width: 100%;
     z-index: 1000;
-    background-color: #fff;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    background-color: #e1e1e1;
+    box-shadow: 0 1px 5px 0 #e1e1e1;
+    margin-bottom: 200px;
     .oj-menu {
-      background: #fdfdfd;
+      background: #e1e1e1;
     }
-
+    .ivu-menu-light.ivu-menu-horizontal .ivu-menu-item-active, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-item:hover, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu-active, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu:hover {
+      color: #934A5F;
+      border-bottom: 2px solid #934A5F;
+  }
+  .ivu-btn, .ivu-btn-ghost, .ivu-btn-circle
+  {
+    color: #57648C;
+    border: 1px solid #57648C;
+    &:hover{
+      color: #934A5F;
+      border: 1px solid #934A5F;
+    }
+  }
     .logo {
       margin-left: 50px;
       margin-right: 150px;
-      font-size: 20px;
+      font-size: 22px;
       float: left;
       height: 200px;
       line-height: 60px;
+      color: #9e3653;
     }
 
     .drop-menu {
       float: right;
       margin-right: 30px;
       position: absolute;
+      color: #fff;
       right: 10px;
       &-title {
         font-size: 18px;
@@ -154,6 +169,7 @@
       font-size: 16px;
       float: right;
       margin-right: 10px;
+      color: #fff;
     }
   }
 

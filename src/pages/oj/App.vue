@@ -92,10 +92,22 @@
     margin-bottom: 10px;
     text-align: center;
     font-size: small;
+    color: #57648C;
   }
 
   .fadeInUp-enter-active {
     animation: fadeInUp .8s;
+  }
+  body{
+    background-color: #E5E5E5;
+    border-bottom: 1px solid #57648C;
+    border-top: 1px solid #57648C;
+    width: 800px;
+    margin: auto;
+    margin-top: 100px;
+  }
+  html{
+    background-color: #E5E5E5;
   }
 
 
