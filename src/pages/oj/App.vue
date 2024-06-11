@@ -113,6 +113,13 @@
     background-color: #934A5F;
     border-color: #934A5F;
   }
-
+  .ivu-tag-blue, .ivu-tag-blue.ivu-tag-dot .ivu-tag-dot-inner {
+    background: #934A5F;
+  }
+  .ivu-btn-info {
+    color: #fff;
+    background-color: #934A5F;
+    border-color: #934A5F;
+}
 
 </style>

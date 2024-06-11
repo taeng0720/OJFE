@@ -300,5 +300,9 @@
 
   #pick-one {
     margin-top: 10px;
+
   }
+  .ivu-tag-blue, .ivu-tag-blue.ivu-tag-dot .ivu-tag-dot-inner {
+    background: #934A5F;
+}
 </style>
