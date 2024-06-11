@@ -112,6 +112,11 @@
 </script>
 
 <style scoped lang="less">
+.ivu-btn-info {
+  color: #fff;
+  background-color: #934A5F;
+  border-color: #934A5F;
+}
   .announcements-container {
     margin-top: -10px;
     margin-bottom: 10px;
@@ -133,8 +138,8 @@
           a.entry {
             color: #495060;
             &:hover {
-              color: #2d8cf0;
-              border-bottom: 1px solid #2d8cf0;
+              color: #934A5F;
+              border-bottom: 1px solid #934A5F;
             }
           }
         }
