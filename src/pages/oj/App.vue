@@ -102,7 +102,7 @@
     background-color: #F0F0F0;
     border-bottom: 1px solid #57648C;
     border-top: 1px solid #57648C;
-    width: 1000px;
+    width: 1200px;
     margin: auto;
     margin-top: 100px;
   }
