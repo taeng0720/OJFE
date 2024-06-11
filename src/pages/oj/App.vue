@@ -121,5 +121,14 @@
     background-color: #934A5F;
     border-color: #934A5F;
 }
-
+.ivu-switch-checked {
+  border-color: #934A5F;
+  background-color: #934A5F;
+}
+.tag-btn, .ivu-btn, .ivu-btn-ghost, .ivu-btn-circle{
+  &:hover{
+    border-color: #934A5F;
+    color: #934A5F;
+  }
+}
 </style>
