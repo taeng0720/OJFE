@@ -109,6 +109,10 @@
   html{
     background-color: #F0F0F0;
   }
+  .ivu-page-item-active {
+    background-color: #934A5F;
+    border-color: #934A5F;
+  }
 
 
 </style>
