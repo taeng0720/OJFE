@@ -7,7 +7,7 @@
         </Input>
       </FormItem>
       <FormItem prop="password">
-        <Input type="password" v-model="formLogin.password" :placeholder="$t('m.LoginPassword')" size="large" @on-enter="handleLogin">
+        <Input type="password" v-model="formLogin.password" :placeholder="$t('PassWord')" size="large" @on-enter="handleLogin">
         <Icon type="ios-locked-outline" slot="prepend"></Icon>
         </Input>
       </FormItem>
@@ -23,10 +23,10 @@
         @click="handleLogin"
         class="btn" long
         :loading="btnLoginLoading">
-        {{$t('m.UserLogin')}}
+        {{$t('로그인')}}
       </Button>
-      <a v-if="website.allow_register" @click.stop="handleBtnClick('register')">{{$t('m.No_Account')}}</a>
-      <a @click.stop="goResetPassword" style="float: right">{{$t('m.Forget_Password')}}</a>
+      <a v-if="website.allow_register" @click.stop="handleBtnClick('register')">{{$t('계정 만들기')}}</a>
+      <a @click.stop="goResetPassword" style="float: right">{{$t('비밀번호를 잃어버렸어요')}}</a>
     </div>
   </div>
 </template>

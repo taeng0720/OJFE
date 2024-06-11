@@ -42,13 +42,13 @@
         @click="handleRegister"
         class="btn" long
         :loading="btnRegisterLoading">
-        {{$t('m.UserRegister')}}
+        {{$t('회원 가입')}}
       </Button>
       <Button
         type="ghost"
         @click="switchMode('login')"
         class="btn" long>
-        {{$t('m.Already_Registed')}}
+        {{$t('이미 가입했습니다')}}
       </Button>
     </div>
   </div>
@@ -68,7 +68,7 @@
       const CheckUsernameNotExist = (rule, value, callback) => {
         api.checkUsernameOrEmail(value, undefined).then(res => {
           if (res.data.data.username === true) {
-            callback(new Error(this.$i18n.t('m.The_username_already_exists')))
+            callback(new Error(this.$i18n.t('이미 있는 UserName입니다')))
           } else {
             callback()
           }
@@ -77,7 +77,7 @@
       const CheckEmailNotExist = (rule, value, callback) => {
         api.checkUsernameOrEmail(undefined, value).then(res => {
           if (res.data.data.email === true) {
-            callback(new Error(this.$i18n.t('m.The_email_already_exists')))
+            callback(new Error(this.$i18n.t('이미 있는 이메일입니다')))
           } else {
             callback()
           }
@@ -93,7 +93,7 @@
 
       const CheckAgainPassword = (rule, value, callback) => {
         if (value !== this.formRegister.password) {
-          callback(new Error(this.$i18n.t('m.password_does_not_match')))
+          callback(new Error(this.$i18n.t('패스워드가 일치하지 않습니다')))
         }
         callback()
       }
@@ -143,7 +143,7 @@
           delete formData['passwordAgain']
           this.btnRegisterLoading = true
           api.register(formData).then(res => {
-            this.$success(this.$i18n.t('m.Thanks_for_registering'))
+            this.$success(this.$i18n.t('가입해주셔서 감사합니다'))
             this.switchMode('login')
             this.btnRegisterLoading = false
           }, _ => {

@@ -16,7 +16,7 @@
       </Menu-item>
       <Menu-item name="/status">
         <Icon type="ios-pulse-strong"></Icon>
-        {{$t('m.NavStatus')}}
+        {{$t('Nav')}}
       </Menu-item>
       <Submenu name="rank">
         <template slot="title">
@@ -30,19 +30,7 @@
           {{$t('m.OI_Rank')}}
         </Menu-item>
       </Submenu>
-      <Submenu name="about">
-        <template slot="title">
-          <Icon type="information-circled"></Icon>
-          {{$t('m.About')}}
-        </template>
-        <Menu-item name="/about">
-          {{$t('m.Judger')}}
-        </Menu-item>
-        <Menu-item name="/FAQ">
-          {{$t('m.FAQ')}}
-        </Menu-item>
-      </Submenu>
-      <template v-if="!isAuthenticated">
+      <template v-if="!isAuthenticate">
         <div class="btn-menu">
           <Button type="ghost"
                   ref="loginBtn"
@@ -58,7 +46,7 @@
         </div>
       </template>
       <template v-else>
-        <Dropdown class="drop-menu" @on-click="handleRoute" placement="bottom" trigger="click">
+        <Dropdown class="drop-menu" @on-click="handleRoute" placement="bottom`" trigger="click">
           <Button type="text" class="drop-menu-title">{{ user.username }}
             <Icon type="arrow-down-b"></Icon>
           </Button>
@@ -133,7 +121,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: auto;
+    height: 0px;
+    padding-top: 10px;
+    padding-bottom: 15px;
     width: 100%;
     z-index: 1000;
     background-color: #fff;
@@ -143,10 +133,11 @@
     }
 
     .logo {
-      margin-left: 2%;
-      margin-right: 2%;
+      margin-left: 50px;
+      margin-right: 150px;
       font-size: 20px;
       float: left;
+      height: 200px;
       line-height: 60px;
     }
 
