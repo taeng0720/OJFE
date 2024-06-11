@@ -131,4 +131,10 @@
     color: #934A5F;
   }
 }
+.ivu-select-single .ivu-select-selection .ivu-select-selected-value {
+  &:hover{
+    border-color: #934A5F;
+    color: #934A5F;
+  }
+}
 </style>
